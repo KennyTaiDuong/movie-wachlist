@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMDB Homepage</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Find your film</h1>
+        <a href="/watchlist.html" id="watchlist-btn">My Watchlist</a>
+      </div>
+      <form id="search-container">
+        <div class="search-bar">
+          <img src="assets/search-icon.png" />
+          <input type="text" placeholder="Search for movie" id="search-query" />
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
+      </form>
+      <div class="content-container" id="content-container">
+        <div class="loading-display">
+          <img src="/assets/movie.png" />
+          <p class="light">start exploring</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
